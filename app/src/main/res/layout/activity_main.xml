@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_dice_type"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupFaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d6" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d8" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d10" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d12" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d20" />
+
+        <RadioButton
+            android:id="@+id/radioButtonD100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d100" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity_of_dice"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDiceCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/dice_count" />
+
+    <Button
+        android:id="@+id/buttonRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll_dice"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/resultText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/resultText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/resultText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>
